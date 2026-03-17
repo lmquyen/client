@@ -7,16 +7,16 @@ export default function Home() {
   //const API_URL = 'http://localhost:3000';
   const API_URL = 'https://server-gdh6.onrender.com';
 
-  useEffect(() => {
-    fetch(API_URL) // Gọi tới NestJS mặc định
-      .then(res => res.text())
-      .then(data => setMsg(data))
-      .catch(() => setMsg('Server chưa bật!'));
-  }, []);
+  // useEffect(() => {
+  //   fetch(API_URL) // Gọi tới NestJS mặc định
+  //     .then(res => res.text())
+  //     .then(data => setMsg(data))
+  //     .catch(() => setMsg('Server chưa bật!'));
+  // }, []);
 
   return (
     <div className="p-20 text-center">
-      <h1 className="text-2xl font-bold">Kết quả: {msg}</h1>
+      <h1 className="text-2xl font-bold">Kết quả</h1>
     </div>
   );
 }
